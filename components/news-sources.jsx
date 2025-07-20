@@ -12,7 +12,9 @@ export function NewsSources({ sources }) {
           <CardHeader className="pb-3 flex-shrink-0">
             <div className="flex items-center justify-between">
               <CardTitle className="text-lg">{source.name}</CardTitle>
+              {/*
               <Badge variant="outline">{source.category}</Badge>
+              */}
             </div>
           </CardHeader>
           <CardContent className="flex-1 flex flex-col overflow-hidden">
@@ -38,12 +40,6 @@ export function NewsSources({ sources }) {
                   ))}
                 </div>
               </div>
-            </div>
-            <div className="mt-4 pt-3 border-t flex-shrink-0">
-              <Link href="#" className="text-sm text-blue-600 hover:text-blue-800 font-medium flex items-center gap-1">
-                すべての記事を見る
-                <ExternalLink className="h-3 w-3" />
-              </Link>
             </div>
           </CardContent>
         </Card>

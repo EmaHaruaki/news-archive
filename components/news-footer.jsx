@@ -10,11 +10,12 @@ export function NewsFooter() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Newspaper className="h-6 w-6 text-blue-600" />
-              <span className="font-bold text-gray-900">ニュースアーカイブ</span>
+              <span className="font-bold text-gray-900">Fastnews.com</span>
             </div>
             <p className="text-gray-600 text-sm">複数のニュースソースから最新情報を収集し、整理してお届けします。</p>
           </div>
           <div>
+            {/*
             <h3 className="font-semibold text-gray-900 mb-4">カテゴリー</h3>
             <ul className="space-y-2 text-sm text-gray-600">
               <li>
@@ -38,18 +39,14 @@ export function NewsFooter() {
                 </Link>
               </li>
             </ul>
+            */}
           </div>
           <div>
             <h3 className="font-semibold text-gray-900 mb-4">リンク</h3>
             <ul className="space-y-2 text-sm text-gray-600">
               <li>
-                <Link href="/terms" className="hover:text-blue-600">
-                  利用規約
-                </Link>
-              </li>
-              <li>
-                <Link href="/privacy" className="hover:text-blue-600">
-                  プライバシーポリシー
+                <Link href="/about" className="hover:text-blue-600">
+                  私たちについて
                 </Link>
               </li>
               <li>
@@ -57,16 +54,11 @@ export function NewsFooter() {
                   お問い合わせ
                 </Link>
               </li>
-              <li>
-                <Link href="/rss" className="hover:text-blue-600">
-                  RSS
-                </Link>
-              </li>
             </ul>
           </div>
         </div>
         <Separator className="my-6" />
-        <div className="text-center text-sm text-gray-500">© 2024 ニュースアーカイブ. All rights reserved.</div>
+        <div className="text-center text-sm text-gray-500">© 2025 Fastnews.com All rights reserved.</div>
       </div>
     </footer>
   )
