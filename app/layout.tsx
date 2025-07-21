@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: {
@@ -44,7 +45,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body>{children}</body>
+      <head />
+      <body>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6223204618871414"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
+        {children}
+      </body>
     </html>
   )
 }
